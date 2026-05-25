@@ -10,5 +10,3 @@ npm run dev
 npm run typecheck
 npm run build
 ```
-
-开发服务器默认运行在 `http://localhost:5174`。
