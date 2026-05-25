@@ -1,0 +1,429 @@
+
+    /* Make the product screen read clearly against the dark studio background. */
+    .terminal {
+      border-color: #020202;
+      outline: 1px solid rgba(255, 255, 255, .22);
+      background:
+        linear-gradient(112deg, rgba(255, 255, 255, .2), transparent 25%),
+        linear-gradient(150deg, #30302d 0%, #1c1c1a 42%, #0b0b0a 100%);
+      box-shadow:
+        26px 34px 0 rgba(0, 0, 0, .34),
+        0 36px 94px rgba(0, 0, 0, .7),
+        inset 0 0 0 1px rgba(255, 255, 255, .16),
+        inset 0 0 46px rgba(255, 255, 255, .035);
+    }
+
+    .terminal::after {
+      opacity: .55;
+      background: linear-gradient(105deg, rgba(255, 255, 255, .11), transparent 34%);
+    }
+
+    .terminal-head {
+      color: #f2ead0;
+      border-bottom-color: rgba(255, 255, 255, .16);
+    }
+
+    .asset-row,
+    .approval-row,
+    .policy-row {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .045)),
+        rgba(30, 30, 28, .98);
+      border-color: rgba(255, 255, 255, .18);
+    }
+
+    .status-line span {
+      background: rgba(255, 255, 255, .07);
+      border-color: rgba(255, 255, 255, .1);
+    }
+
+    .hero h1,
+    .hero-copy,
+    .metric strong,
+    .metric span {
+      opacity: 1;
+    }
+
+    /* Crypto landing reference refresh: black, lime, purple, bold modular sections. */
+    :root {
+      --ink: #111111;
+      --panel: #1a1a1b;
+      --panel-2: #202023;
+      --paper: #f5f5f2;
+      --muted: #a9aaa4;
+      --line: rgba(210, 255, 42, .18);
+      --cyan: #c9ff21;
+      --mint: #c9ff21;
+      --amber: #c9ff21;
+      --coral: #7c3cff;
+      --violet: #7c3cff;
+      --blue: #b5ff2a;
+      --shadow: 0 28px 80px rgba(0, 0, 0, .46);
+      --radius: 8px;
+    }
+
+    html,
+    body {
+      background: #111;
+    }
+
+    body {
+      color: var(--paper);
+      background:
+        radial-gradient(circle at 72% 18%, rgba(124, 60, 255, .34), transparent 23%),
+        radial-gradient(circle at 30% 12%, rgba(201, 255, 33, .12), transparent 18%),
+        #111;
+    }
+
+    body::before {
+      opacity: .12;
+      background:
+        linear-gradient(rgba(201, 255, 33, .08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201, 255, 33, .055) 1px, transparent 1px);
+      background-size: 64px 64px;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, .9), transparent 82%);
+    }
+
+    .topbar {
+      background: rgba(17, 17, 17, .92);
+      border-bottom: 1px solid rgba(201, 255, 33, .16);
+      box-shadow: none;
+    }
+
+    .brand {
+      font-weight: 850;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      filter: drop-shadow(0 0 14px rgba(201, 255, 33, .42));
+    }
+
+    .logo-shell {
+      fill: #c9ff21;
+      filter: none;
+    }
+
+    .logo-cut,
+    .logo-node {
+      fill: #111;
+    }
+
+    .nav-links {
+      color: #d6d8cf;
+      font-weight: 720;
+    }
+
+    .nav-links a::after {
+      background: #c9ff21;
+    }
+
+    .primary {
+      background: #c9ff21;
+      color: #111;
+      border-color: #c9ff21;
+      box-shadow: 0 0 0 1px rgba(201, 255, 33, .4), 0 18px 42px rgba(201, 255, 33, .18);
+      font-weight: 900;
+    }
+
+    .secondary,
+    .language-switch summary {
+      background: #1b1b1d;
+      color: #f5f5f2;
+      border-color: rgba(245, 245, 242, .14);
+    }
+
+    .language-current::before,
+    .pulse,
+    .signal i {
+      background: #c9ff21;
+      box-shadow: 0 0 18px rgba(201, 255, 33, .74);
+    }
+
+    .language-menu {
+      background: rgba(20, 20, 22, .98);
+      border-color: rgba(201, 255, 33, .24);
+    }
+
+    .language-switch button.is-active {
+      color: #111;
+      background: #c9ff21;
+    }
+
+    .language-switch button.is-active::after {
+      border-color: #111;
+    }
+
+    .hero {
+      min-height: calc(100svh - 72px);
+      padding: clamp(70px, 8vw, 112px) 0 72px;
+      background:
+        radial-gradient(circle at 72% 40%, rgba(124, 60, 255, .48), transparent 30%),
+        radial-gradient(circle at 88% 36%, rgba(201, 255, 33, .18), transparent 18%),
+        linear-gradient(135deg, #181819 0%, #111 58%, #151515 100%);
+    }
+
+    .hero::before {
+      opacity: .42;
+      mix-blend-mode: normal;
+      background:
+        linear-gradient(120deg, transparent 0%, rgba(124, 60, 255, .22) 58%, transparent 88%),
+        radial-gradient(circle at 68% 56%, rgba(201, 255, 33, .18), transparent 15%);
+    }
+
+    .hero::after {
+      display: none;
+    }
+
+    .hero-grid {
+      grid-template-columns: minmax(360px, .82fr) minmax(480px, 1.18fr);
+      gap: clamp(36px, 6vw, 76px);
+    }
+
+    .eyebrow {
+      color: #c9ff21;
+      font-weight: 900;
+    }
+
+    h1 {
+      color: #f7f7f2;
+      font-size: clamp(50px, 6.6vw, 92px);
+      line-height: .9;
+      text-transform: uppercase;
+      text-shadow: none;
+    }
+
+    .hero-copy {
+      max-width: 560px;
+      color: #d7d8d1;
+      text-shadow: none;
+    }
+
+    .metrics {
+      max-width: 620px;
+      gap: 10px;
+    }
+
+    .metric {
+      background: #1c1c1e;
+      border-color: rgba(201, 255, 33, .16);
+      box-shadow: none;
+    }
+
+    .metric strong {
+      color: #c9ff21;
+      font-weight: 950;
+    }
+
+    .metric span {
+      color: #b7b8b1;
+    }
+
+    .visual {
+      min-height: 560px;
+      perspective: 1200px;
+    }
+
+    .visual::before,
+    .visual::after {
+      display: none;
+    }
+
+    .terminal {
+      width: min(100%, 620px);
+      min-height: 520px;
+      padding: 18px;
+      border: 1px solid rgba(201, 255, 33, .24);
+      outline: 0;
+      border-radius: 8px;
+      background:
+        radial-gradient(circle at 70% 22%, rgba(124, 60, 255, .34), transparent 32%),
+        linear-gradient(145deg, #242426, #151516 58%);
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, .56),
+        inset 0 1px 0 rgba(255, 255, 255, .06);
+      transform: rotateX(4deg) rotateY(-8deg);
+    }
+
+    .terminal::before {
+      display: none;
+    }
+
+    .terminal::after {
+      opacity: .7;
+      background:
+        radial-gradient(circle at 74% 38%, rgba(201, 255, 33, .13), transparent 22%),
+        linear-gradient(120deg, rgba(255, 255, 255, .06), transparent 28%);
+    }
+
+    .terminal-head {
+      color: #f5f5f2;
+      border-bottom-color: rgba(201, 255, 33, .16);
+      background: transparent;
+    }
+
+    .asset-row,
+    .approval-row,
+    .policy-row {
+      background: #1b1b1d;
+      border-color: rgba(245, 245, 242, .1);
+      box-shadow: none;
+    }
+
+    .coin,
+    .coin.eth,
+    .coin.usdc {
+      background: #c9ff21;
+      color: #111;
+      box-shadow: 0 0 32px rgba(201, 255, 33, .22);
+    }
+
+    .status-line span {
+      background: #232326;
+      border-color: rgba(245, 245, 242, .06);
+    }
+
+    .status-line span::after {
+      background: linear-gradient(90deg, transparent, rgba(201, 255, 33, .72), transparent);
+    }
+
+    .bar i,
+    .bar.mint i,
+    .case-meter span {
+      background: #c9ff21;
+    }
+
+    .node {
+      background: rgba(26, 26, 28, .88);
+      border-color: rgba(201, 255, 33, .18);
+    }
+
+    .node::before {
+      background: #c9ff21;
+      box-shadow: 0 0 24px rgba(201, 255, 33, .36);
+    }
+
+    section:not(.hero),
+    #products,
+    #security,
+    #use-cases,
+    .dev-band,
+    footer {
+      background: #111;
+    }
+
+    #products,
+    #security,
+    #use-cases {
+      background:
+        radial-gradient(circle at 20% 0%, rgba(124, 60, 255, .18), transparent 23%),
+        #111;
+    }
+
+    .section-head h2,
+    .dev-copy h2,
+    .cta h2,
+    #security .security-panel h2 {
+      color: #f7f7f2;
+      text-transform: uppercase;
+      text-shadow: none;
+    }
+
+    .section-head p,
+    #security .security-panel p,
+    .dev-copy p,
+    .product-card p,
+    .case p,
+    .stack-row p {
+      color: #b9bab3;
+    }
+
+    .product-card,
+    .case,
+    #security .stack-row,
+    .code-card {
+      background: #1a1a1c;
+      border-color: rgba(245, 245, 242, .08);
+      box-shadow: none;
+    }
+
+    .product-card:hover,
+    .case:hover,
+    #security .stack-row:hover {
+      border-color: rgba(201, 255, 33, .48);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .32);
+    }
+
+    .glyph,
+    .security-icon {
+      background: #c9ff21 !important;
+      box-shadow: 0 0 34px rgba(201, 255, 33, .16);
+    }
+
+    .security-icon.risk,
+    .security-icon.audit,
+    .security-icon.chain {
+      --c1: #c9ff21;
+      --c2: #c9ff21;
+    }
+
+    #security .security-panel {
+      background:
+        radial-gradient(circle at 74% 70%, rgba(124, 60, 255, .28), transparent 28%),
+        #1a1a1c;
+      border-color: rgba(201, 255, 33, .2);
+    }
+
+    #security .security-panel::before {
+      background:
+        radial-gradient(circle at 18% 12%, rgba(201, 255, 33, .16), transparent 26%),
+        radial-gradient(circle at 86% 82%, rgba(124, 60, 255, .18), transparent 28%);
+    }
+
+    .security-kicker {
+      color: #111;
+      background: #c9ff21;
+      border-color: #c9ff21;
+      font-weight: 900;
+    }
+
+    .security-kicker i {
+      background: #111;
+      box-shadow: none;
+    }
+
+    .security-stats span {
+      background: #202023;
+      border-color: rgba(201, 255, 33, .18);
+    }
+
+    .security-stats b {
+      color: #c9ff21;
+    }
+
+    .vault-motion {
+      border-color: rgba(201, 255, 33, .18);
+      background:
+        linear-gradient(rgba(201, 255, 33, .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201, 255, 33, .04) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(124, 60, 255, .2), transparent 56%);
+      background-size: 44px 44px, 44px 44px, auto;
+    }
+
+    .vault-core {
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0)),
+        conic-gradient(from 180deg, #c9ff21, #7c3cff, #c9ff21);
+      box-shadow:
+        0 0 0 12px rgba(201, 255, 33, .06),
+        0 30px 90px rgba(124, 60, 255, .22);
+    }
+
+    .vault-ring {
+      border-color: rgba(201, 255, 33, .22);
+    }
+
+    .flow-line {
+      background: linear-gradient(90deg, transparent, rgba(201, 255, 33, .78), transparent);
+    }

@@ -1,0 +1,447 @@
+
+    .metrics {
+      gap: 14px !important;
+      margin-top: 12px !important;
+      max-width: 690px !important;
+    }
+
+    .metric {
+      padding: 18px 18px 17px !important;
+    }
+
+    .metric strong {
+      font-size: clamp(27px, 2.4vw, 36px) !important;
+      line-height: 1.02 !important;
+      margin-bottom: 9px !important;
+      font-weight: 780 !important;
+    }
+
+    .metric span {
+      font-size: 13px !important;
+      line-height: 1.46 !important;
+    }
+
+    .hero-crypto-art {
+      min-height: clamp(500px, 48vw, 640px) !important;
+    }
+
+    .scale-title,
+    .section-head,
+    #use-cases .case-head {
+      max-width: 760px !important;
+      margin-bottom: var(--space-gap-lg) !important;
+    }
+
+    .scale-title > span {
+      font-size: clamp(50px, 9vw, 116px) !important;
+      line-height: .95 !important;
+      margin-bottom: 14px;
+    }
+
+    .scale-title h2,
+    .section-head h2,
+    .security-copy-panel h2,
+    .market-band h2,
+    .allocation h2,
+    .cta-panel h2,
+    html[lang="zh-CN"] .scale-title h2,
+    html[lang="zh-CN"] .section-head h2,
+    html[lang="zh-CN"] .security-copy-panel h2,
+    html[lang="zh-CN"] .market-band h2,
+    html[lang="zh-CN"] .allocation h2,
+    html[lang="zh-CN"] .cta-panel h2,
+    html[lang="zh-TW"] .scale-title h2,
+    html[lang="zh-TW"] .section-head h2,
+    html[lang="zh-TW"] .security-copy-panel h2,
+    html[lang="zh-TW"] .market-band h2,
+    html[lang="zh-TW"] .allocation h2,
+    html[lang="zh-TW"] .cta-panel h2 {
+      font-size: var(--type-section) !important;
+      line-height: 1.14 !important;
+      font-weight: 820 !important;
+      margin-bottom: 14px !important;
+    }
+
+    .scale-title p,
+    .section-head p,
+    .security-copy-panel p,
+    .market-band p,
+    .cta-panel p,
+    html[lang="en"] .market-band p,
+    html[lang="en"] .security-copy-panel p {
+      font-size: var(--type-body) !important;
+      line-height: 1.66 !important;
+      max-width: 620px;
+    }
+
+    .feature-strip,
+    .icon-row,
+    .review-grid {
+      gap: 18px !important;
+    }
+
+    .product-card,
+    #use-cases .case,
+    .stack-row {
+      padding: var(--space-card) !important;
+    }
+
+    .product-card h3,
+    .case h3,
+    .stack-row h3,
+    html[lang="zh-CN"] .product-card h3,
+    html[lang="zh-CN"] .case h3,
+    html[lang="zh-CN"] .stack-row h3,
+    html[lang="zh-TW"] .product-card h3,
+    html[lang="zh-TW"] .case h3,
+    html[lang="zh-TW"] .stack-row h3 {
+      font-size: var(--type-card) !important;
+      line-height: 1.25 !important;
+      font-weight: 760 !important;
+      margin: 0 0 10px !important;
+    }
+
+    .product-card p,
+    .case p,
+    .stack-row p,
+    #use-cases .case p {
+      font-size: 14px !important;
+      line-height: 1.62 !important;
+    }
+
+    .tag-list {
+      gap: 8px !important;
+      margin-top: 22px !important;
+    }
+
+    .tag-list span {
+      padding: 7px 10px !important;
+      font-size: 12px !important;
+      line-height: 1 !important;
+      font-weight: 720 !important;
+    }
+
+    .security-layout,
+    .market-grid,
+    .token-grid,
+    .contact-layout {
+      gap: var(--space-gap-xl) !important;
+    }
+
+    .security-copy-panel {
+      padding: clamp(30px, 3.8vw, 46px) !important;
+    }
+
+    html[lang="en"] .security-copy-panel h2,
+    html[lang="en"] .market-band h2 {
+      font-size: clamp(32px, 3.1vw, 46px) !important;
+      line-height: 1.14 !important;
+      font-weight: 760 !important;
+    }
+
+    .security-stats {
+      gap: 14px !important;
+      margin-top: 24px !important;
+    }
+
+    .security-stats span {
+      padding: 16px !important;
+    }
+
+    .security-stats b {
+      font-size: clamp(22px, 2vw, 28px) !important;
+      line-height: 1.05 !important;
+    }
+
+    .market-band h2 {
+      max-width: 620px !important;
+    }
+
+    .market-band p {
+      margin-bottom: 24px !important;
+    }
+
+    .market-table {
+      padding: 18px !important;
+    }
+
+    .market-table div {
+      padding: 18px 14px !important;
+      grid-template-columns: 76px 1fr auto !important;
+    }
+
+    .market-table b,
+    .market-table span,
+    .market-table em {
+      font-size: 15px !important;
+      line-height: 1.2 !important;
+    }
+
+    #use-cases .case {
+      min-height: 260px !important;
+      gap: 20px !important;
+    }
+
+    #use-cases .stars {
+      font-size: 16px !important;
+    }
+
+    .donut {
+      width: min(68vw, 340px) !important;
+    }
+
+    .allocation {
+      gap: 14px !important;
+    }
+
+    .allocation > div {
+      padding: 15px 16px !important;
+    }
+
+    .allocation b {
+      font-size: 13px !important;
+      line-height: 1.2 !important;
+    }
+
+    .subscribe-panel .cta-panel {
+      padding: clamp(30px, 5vw, 56px) !important;
+    }
+
+    .contact-copy {
+      gap: 16px !important;
+    }
+
+    .contact-points {
+      gap: 11px !important;
+    }
+
+    .contact-points li {
+      font-size: 14px !important;
+      line-height: 1.4 !important;
+    }
+
+    .contact-card {
+      padding: clamp(20px, 2.8vw, 30px) !important;
+      gap: 16px !important;
+    }
+
+    .contact-email-link {
+      min-height: 46px !important;
+      padding: 13px !important;
+    }
+
+    .contact-email-value {
+      font-size: clamp(20px, 2.5vw, 30px) !important;
+    }
+
+    .contact-card-copy {
+      font-size: 14px !important;
+    }
+
+    footer {
+      padding: 30px 0 !important;
+    }
+
+    .footer-grid {
+      gap: 18px !important;
+      font-size: 13px !important;
+    }
+
+    @media (max-width: 1050px) {
+      .deck-hero,
+      .scale-section,
+      .security-redesign,
+      .market-band,
+      .social-proof,
+      .token-section {
+        padding-top: var(--space-section-tight) !important;
+        padding-bottom: var(--space-section-tight) !important;
+      }
+
+      .deck-hero-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .hero-crypto-art {
+        min-height: 500px !important;
+      }
+
+      .feature-strip,
+      .icon-row,
+      .review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+
+    @media (max-width: 720px) {
+      :root {
+        --space-section: 64px;
+        --space-section-tight: 56px;
+        --space-card: 20px;
+        --type-brand: clamp(46px, 15vw, 64px);
+        --type-section: clamp(26px, 8vw, 34px);
+        --type-card: 18px;
+      }
+
+      .shell {
+        width: min(100% - 28px, 1180px) !important;
+      }
+
+      .deck-hero-copy {
+        gap: 20px !important;
+      }
+
+      .metrics,
+      .feature-strip,
+      .icon-row,
+      .review-grid,
+      .security-stats {
+        grid-template-columns: 1fr !important;
+      }
+
+      .hero-crypto-art {
+        min-height: 420px !important;
+      }
+
+      .metric {
+        padding: 16px !important;
+      }
+
+      .phone-graphic {
+        min-height: 390px !important;
+      }
+
+      .market-table {
+        box-shadow: 10px 10px 0 rgba(124, 60, 255, .82), 0 20px 40px rgba(8, 9, 8, .18) !important;
+      }
+
+      .market-table div {
+        grid-template-columns: 58px 1fr !important;
+        gap: 8px 12px !important;
+      }
+
+      .market-table em {
+        grid-column: 2;
+      }
+
+      .contact-email-link {
+        grid-template-columns: 42px minmax(0, 1fr) !important;
+        gap: 12px !important;
+      }
+
+      .contact-email-icon {
+        width: 42px !important;
+        height: 42px !important;
+      }
+
+      .contact-email-value {
+        font-size: 15px !important;
+        overflow-wrap: normal !important;
+        white-space: nowrap !important;
+      }
+
+      .contact-actions .primary,
+      .contact-copy-button {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+
+    .contact-card {
+      box-shadow: 10px 10px 0 rgba(124, 60, 255, .82) !important;
+      }
+    }
+
+    /* Product card rhythm correction */
+    #products .product-card {
+      min-height: 292px;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px !important;
+    }
+
+    #products .product-card > div:first-child {
+      display: grid;
+      gap: 0;
+    }
+
+    #products .glyph {
+      margin-bottom: 22px !important;
+    }
+
+    #products .product-card h3,
+    html[lang="zh-CN"] #products .product-card h3,
+    html[lang="zh-TW"] #products .product-card h3 {
+      margin: 0 0 14px !important;
+      line-height: 1.24 !important;
+    }
+
+    #products .product-card p {
+      margin: 0 !important;
+      max-width: 95%;
+    }
+
+    #products .tag-list {
+      margin-top: 26px !important;
+    }
+
+    .brand-mark {
+      background: var(--neo-lime) !important;
+      border-radius: 50% !important;
+    }
+
+    .brand-logo .logo-shell {
+      fill: #090a0a !important;
+      filter: none !important;
+    }
+
+    .brand-logo .logo-cut {
+      fill: var(--neo-lime) !important;
+    }
+
+    .brand-logo .logo-node {
+      fill: #090a0a !important;
+    }
+
+    /* Workflow section replaces ratio chart with an interactive product loop. */
+    .workflow-grid {
+      align-items: center;
+    }
+
+    .workflow-orb {
+      position: relative;
+      width: min(78vw, 430px);
+      aspect-ratio: 1;
+      margin: 0 auto;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(205, 255, 41, .28), transparent 28%),
+        radial-gradient(circle, rgba(124, 60, 255, .28), transparent 68%);
+      transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .workflow-ring {
+      position: absolute;
+      inset: 46px;
+      border: 1px solid rgba(205, 255, 41, .34);
+      border-radius: 50%;
+      animation: orbitSpin 18s linear infinite;
+    }
+
+    .workflow-ring.r2 {
+      inset: 86px;
+      border-color: rgba(124, 60, 255, .56);
+      animation-duration: 12s;
+      animation-direction: reverse;
+    }
+
+    .workflow-core {
+      position: absolute;
+      inset: 132px;
+      border-radius: 50%;
+      background: var(--neo-lime);
+      box-shadow: 0 0 54px rgba(205, 255, 41, .44);
+      display: grid;
+      place-items: center;
+    }

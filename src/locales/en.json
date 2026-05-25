@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "title": "NexaVault | Institutional Digital Asset Infrastructure",
+    "description": "Digital asset infrastructure for banks, funds, exchanges, and Web3 companies: custody, wallets, settlement, staking, stablecoin issuance, and API orchestration in one auditable control plane.",
+    "navLabel": "Primary navigation"
+  },
+  "nav": {
+    "products": "Products",
+    "security": "Security",
+    "developers": "Developers",
+    "useCases": "Use Cases",
+    "viewProducts": "Explore Products",
+    "demo": "Book Demo",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "languageLabel": "Language",
+    "currentLanguage": "Current language: {{language}}"
+  },
+  "hero": {
+    "eyebrow": "Institutional digital asset stack",
+    "copy": "Digital asset infrastructure for banks, funds, exchanges, and Web3 companies: custody, wallets, settlement, staking, stablecoin issuance, and API orchestration in one auditable control plane.",
+    "primary": "Book a Product Demo",
+    "secondary": "Get API Sandbox",
+    "metricsLabel": "Platform metrics",
+    "assets": "Simulated assets under custody and settlement",
+    "networks": "Supported chains, tokens, and fiat corridors",
+    "uptime": "Enterprise wallet service availability target",
+    "visualLabel": "Product console prototype",
+    "node1": "MPC policy engine",
+    "live": "Live",
+    "node2": "Real-time compliance screening",
+    "node3": "On-chain settlement routing",
+    "approvalTitle": "Multisig approval queue",
+    "approvalMeta": "2 transfers await Finance and Risk approval"
+  },
+  "products": {
+    "kicker": "Scale",
+    "title": "Asset operations, separated into clear and composable product modules.",
+    "copy": "NexaVault avoids exposing scattered back-office functions and organizes the page around the capabilities institutions actually buy.",
+    "items": [
+      { "title": "Qualified Custody", "copy": "Cold and hot wallets, MPC key shares, insurance workflows, and audit reports for funds, banks, and public-company treasury teams.", "tags": ["MPC", "Cold Storage", "Audit"] },
+      { "title": "Wallet Platform", "copy": "Embeddable wallets, withdrawal policies, white-label accounts, and on-chain risk controls for exchanges, payments, and fintech platforms.", "tags": ["API", "Policy", "Webhook"] },
+      { "title": "Settlement Network", "copy": "Atomic delivery across OTC desks, market makers, and custody accounts to reduce counterparty exposure and improve capital efficiency.", "tags": ["DvP", "OTC", "24/7"] },
+      { "title": "Stablecoin Studio", "copy": "Issuance, minting, redemption, reserve reporting, and account compliance for global payments and treasury programs.", "tags": ["Mint", "KYC", "Reserve"] }
+    ]
+  },
+  "security": {
+    "kicker": "Control plane active",
+    "title": "Turn signing, approvals, and risk controls into an automated safety chain.",
+    "copy": "Every asset movement passes through policy, counterparty screening, permission checks, and audit logging before it reaches the signing path.",
+    "stats": [
+      { "value": "4 layers", "label": "Policy, people, addresses, and on-chain behavior working together" },
+      { "value": "< 2s", "label": "Pre-screen response for high-risk transfers" }
+    ],
+    "items": [
+      { "title": "Layered Authorization", "copy": "Configure approval flows by asset, amount, address, region, and transaction type to reduce manual confirmation and privilege drift." },
+      { "title": "Real-time Risk Engine", "copy": "On-chain behavior, sanctions lists, abnormal routes, and counterparty reputation enter the same decision layer before release." },
+      { "title": "Auditable Ledger", "copy": "Policy changes, signing actions, transaction states, and report exports produce records for internal controls and external audits." },
+      { "title": "Cross-chain Operations", "copy": "Manage public chains, L2s, stablecoins, and tokenized assets from one account view without switching between tools." }
+    ]
+  },
+  "developers": {
+    "title": "Embed wallet, settlement, and compliance modules into your product.",
+    "copy": "Developers can orchestrate account creation, transaction approvals, chain state sync, and report exports through REST APIs, webhooks, and SDKs.",
+    "cta": "Get API Sandbox",
+    "request": "POST /v1/transfers",
+    "response": "policy.approved",
+    "status": "Webhook delivered"
+  },
+  "cases": {
+    "kicker": "Institutional scenarios",
+    "title": "Different buying reasons for different types of institutions.",
+    "copy": "Each scenario can grow into a dedicated detail page; this first release keeps the product story complete on one page.",
+    "items": [
+      { "title": "Asset Managers and ETF Issuers", "copy": "Custody, subscriptions and redemptions, valuation, audit exports, and multi-team approvals in one workflow." },
+      { "title": "Exchanges and Fintech Platforms", "copy": "Connect wallets, deposits, withdrawals, address risk controls, and customer fund segregation through API." },
+      { "title": "Corporate Treasury and Stablecoin Teams", "copy": "Operate BTC, ETH, stablecoins, and tokenized assets with policies that keep treasury movement transparent." }
+    ]
+  },
+  "workflow": {
+    "kicker": "Operating loop",
+    "title": "Asset operations from onboarding to settlement.",
+    "steps": [
+      { "title": "Onboard institutional accounts", "copy": "Set up account structures, permission roles, and asset scope for funds, exchanges, or treasury teams." },
+      { "title": "Configure policy and approvals", "copy": "Define controls by amount, address, chain, and business type before transactions are released." },
+      { "title": "Execute signing and settlement", "copy": "Move funds through MPC signing, on-chain routing, and settlement workflows with audit records preserved." },
+      { "title": "Sync reports and audit trails", "copy": "Share transaction states, approval records, and asset snapshots with finance, risk, and audit teams." }
+    ]
+  },
+  "contact": {
+    "title": "Contact the NexaVault product team.",
+    "copy": "Email us your institution type and target scenario. We will prepare guidance around custody, wallets, settlement, or stablecoin workflows.",
+    "points": ["Reply within one business day", "Product and API consultation", "No dashboard login required"],
+    "emailLabel": "Contact email",
+    "emailAddress": "contact@nexavault.com",
+    "responseTime": "1 business day",
+    "emailCopy": "Use this address for custody, wallet, settlement, stablecoin, staking, or API integration discussions.",
+    "emailCta": "Send email",
+    "copyEmail": "Copy address",
+    "copied": "Copied",
+    "mailSubject": "NexaVault product inquiry",
+    "cardAria": "NexaVault product team contact email",
+    "metaOne": "Custody",
+    "metaTwo": "Wallets",
+    "metaThree": "Settlement"
+  },
+  "footer": {
+    "note": "Prototype for institutional digital asset infrastructure · 2026"
+  }
+}

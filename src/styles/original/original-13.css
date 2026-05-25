@@ -1,0 +1,434 @@
+
+    #use-cases .case::before {
+      opacity: 1;
+      background:
+        linear-gradient(120deg, transparent 0%, rgba(205, 255, 41, .2) 45%, rgba(124, 60, 255, .22) 56%, transparent 70%);
+      transform: translateX(-120%);
+      transition: transform .55s ease;
+      mix-blend-mode: screen;
+    }
+
+    #use-cases .case::after {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      border-radius: 7px;
+      background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(205, 255, 41, .28), transparent 26%);
+      opacity: 0;
+      transition: opacity .2s ease;
+      pointer-events: none;
+    }
+
+    #use-cases .case:hover {
+      transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-8px);
+      border-color: rgba(205, 255, 41, .46) !important;
+      box-shadow: 0 28px 90px rgba(0, 0, 0, .42), 0 0 46px rgba(205, 255, 41, .1) !important;
+    }
+
+    #use-cases .case:hover::before {
+      transform: translateX(120%);
+    }
+
+    #use-cases .case:hover::after {
+      opacity: .8;
+    }
+
+    #use-cases .stars,
+    #use-cases .case-top,
+    #use-cases .case p {
+      position: relative;
+      z-index: 1;
+      transform: translateZ(24px);
+    }
+
+    #use-cases .stars {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    #use-cases .case-top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+    }
+
+    #use-cases .case h3 {
+      margin: 0 !important;
+      max-width: 260px;
+    }
+
+    #use-cases .case p {
+      align-self: end;
+      margin: 0 !important;
+      color: rgba(246, 247, 239, .72) !important;
+    }
+
+    #use-cases .arrow {
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+
+    #use-cases .case:hover .arrow {
+      transform: translate(4px, -4px) rotate(12deg);
+      box-shadow: 0 0 24px rgba(205, 255, 41, .32);
+    }
+
+    #use-cases .case-meter {
+      display: none !important;
+    }
+
+    /* English headline sizing: keep impact without overwhelming the modules. */
+    html[lang="en"] .market-band h2 {
+      max-width: 620px;
+      font-size: clamp(34px, 3.2vw, 48px) !important;
+      line-height: 1.12 !important;
+      font-weight: 780 !important;
+      font-family: Inter, "Arial Black", sans-serif !important;
+    }
+
+    html[lang="en"] .security-copy-panel h2 {
+      max-width: 560px;
+      font-size: clamp(32px, 3vw, 46px) !important;
+      line-height: 1.14 !important;
+      font-weight: 780 !important;
+      font-family: Inter, "Arial Black", sans-serif !important;
+    }
+
+    html[lang="en"] .market-band p,
+    html[lang="en"] .security-copy-panel p {
+      max-width: 520px;
+      font-size: 16px !important;
+      line-height: 1.62 !important;
+    }
+
+    html[lang="en"] .security-kicker {
+      font-size: 12px !important;
+      font-weight: 800 !important;
+    }
+
+    /* Brand name must remain visually identical across all languages. */
+    .deck-hero h1,
+    html[lang="en"] .deck-hero h1,
+    html[lang="zh-CN"] .deck-hero h1,
+    html[lang="zh-TW"] .deck-hero h1 {
+      max-width: 620px !important;
+      color: var(--neo-text) !important;
+      -webkit-text-fill-color: var(--neo-text) !important;
+      font-family: Inter, "Arial Black", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+      font-size: clamp(54px, 6vw, 86px) !important;
+      line-height: .98 !important;
+      font-weight: 850 !important;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+    }
+
+    @keyframes neoPulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(205, 255, 41, .42);
+      }
+      50% {
+        transform: scale(1.35);
+        box-shadow: 0 0 0 10px rgba(205, 255, 41, 0);
+      }
+    }
+
+    @keyframes glowBreath {
+      0%, 100% {
+        transform: scale(.96);
+        opacity: .72;
+      }
+      50% {
+        transform: scale(1.04);
+        opacity: 1;
+      }
+    }
+
+    @keyframes orbitSpin {
+      to {
+        transform: rotateX(62deg) rotateZ(342deg);
+      }
+    }
+
+    @keyframes stackFloat {
+      0%, 100% {
+        translate: 0 0;
+      }
+      50% {
+        translate: 0 -18px;
+      }
+    }
+
+    @keyframes consoleFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-14px);
+      }
+    }
+
+    @keyframes phoneDrift {
+      0%, 100% {
+        margin-top: 0;
+      }
+      50% {
+        margin-top: -18px;
+      }
+    }
+
+    @keyframes globeFloat {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-16px) rotate(6deg);
+      }
+    }
+
+    @keyframes barScan {
+      0%, 100% {
+        filter: saturate(1);
+      }
+      50% {
+        filter: saturate(1.55) brightness(1.08);
+      }
+    }
+
+    @media (max-width: 1050px) {
+      .deck-hero-grid,
+      .security-layout,
+      .market-grid,
+      .token-grid,
+      .contact-layout {
+        grid-template-columns: 1fr !important;
+      }
+
+      .deck-hero-copy,
+      .market-grid > div:first-child {
+        max-width: 760px;
+      }
+
+      .hero-crypto-art {
+        min-height: 560px;
+      }
+
+      .feature-strip,
+      .icon-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100% - 28px, 1160px);
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .nav-links {
+        display: none !important;
+      }
+
+      .nav-actions {
+        gap: 8px;
+      }
+
+      .nav-actions .secondary {
+        display: none !important;
+      }
+
+      .deck-hero {
+        min-height: auto;
+        padding-top: 44px !important;
+      }
+
+      .deck-hero h1 {
+        font-size: clamp(48px, 17vw, 76px) !important;
+      }
+
+      .metrics,
+      .feature-strip,
+      .icon-row,
+      .review-grid,
+      .security-stats {
+        grid-template-columns: 1fr !important;
+      }
+
+      .hero-crypto-art {
+        min-height: 430px;
+      }
+
+      .coin-orbit {
+        inset: 54px 8px 70px;
+      }
+
+      .orbital {
+        width: 52px;
+        height: 52px;
+      }
+
+      .vault-stack {
+        width: min(88vw, 320px);
+        height: 300px;
+      }
+
+      .vault-layer {
+        height: 92px;
+        border-radius: 20px;
+      }
+
+      .vault-layer:nth-child(2) {
+        bottom: 62px;
+      }
+
+      .vault-layer:nth-child(3) {
+        bottom: 122px;
+      }
+
+      .vault-symbol {
+        width: 96px;
+        height: 96px;
+        font-size: 52px;
+      }
+
+      .floating-console {
+        right: auto;
+        bottom: 28px;
+        width: 100%;
+      }
+
+      .phone-graphic {
+        min-height: 410px;
+      }
+
+      .phone-card {
+        width: 210px;
+        height: 310px;
+      }
+
+      .wire-globe {
+        width: 190px;
+        height: 190px;
+      }
+
+      .market-table {
+        box-shadow: 10px 10px 0 rgba(124, 60, 255, .8);
+      }
+
+      .market-table div {
+        grid-template-columns: 54px 1fr;
+      }
+
+      .market-table em {
+        grid-column: 2;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .001ms !important;
+      }
+    }
+
+    /* Final typography and spacing pass */
+    :root {
+      --space-section: clamp(84px, 9vw, 132px);
+      --space-section-tight: clamp(68px, 7vw, 104px);
+      --space-gap-xl: clamp(36px, 5vw, 72px);
+      --space-gap-lg: clamp(24px, 3vw, 40px);
+      --space-card: clamp(22px, 2.4vw, 30px);
+      --type-brand: clamp(58px, 6.4vw, 88px);
+      --type-display: clamp(34px, 4.2vw, 58px);
+      --type-section: clamp(30px, 3.4vw, 46px);
+      --type-card: clamp(18px, 1.45vw, 21px);
+      --type-body: 16px;
+      --type-small: 13px;
+    }
+
+    body {
+      font-size: var(--type-body) !important;
+      line-height: 1.6;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 48px)) !important;
+    }
+
+    .deck-hero,
+    .scale-section,
+    .security-redesign,
+    .market-band,
+    .social-proof,
+    .token-section {
+      padding-top: var(--space-section) !important;
+      padding-bottom: var(--space-section) !important;
+    }
+
+    .subscribe-panel {
+      padding-top: 0 !important;
+      padding-bottom: var(--space-section) !important;
+    }
+
+    .deck-hero {
+      min-height: auto !important;
+    }
+
+    .deck-hero-grid {
+      gap: var(--space-gap-xl) !important;
+      grid-template-columns: minmax(360px, .9fr) minmax(480px, 1.1fr) !important;
+    }
+
+    .deck-hero-copy {
+      gap: 24px !important;
+    }
+
+    .deck-hero h1,
+    html[lang="en"] .deck-hero h1,
+    html[lang="zh-CN"] .deck-hero h1,
+    html[lang="zh-TW"] .deck-hero h1 {
+      font-size: var(--type-brand) !important;
+      line-height: .98 !important;
+      font-weight: 840 !important;
+      max-width: 650px !important;
+      margin: 0 !important;
+    }
+
+    .eyebrow {
+      font-size: 13px !important;
+      line-height: 1.2 !important;
+      font-weight: 820 !important;
+    }
+
+    .hero-copy,
+    html[lang="zh-CN"] .hero-copy,
+    html[lang="zh-TW"] .hero-copy {
+      max-width: 620px !important;
+      font-size: clamp(15px, 1.15vw, 17px) !important;
+      line-height: 1.72 !important;
+      font-weight: 520 !important;
+    }
+
+    .hero-actions {
+      gap: 12px !important;
+      margin-top: 2px;
+    }
+
+    .primary,
+    .secondary,
+    .language-switch summary {
+      min-height: 44px;
+      padding: 11px 18px !important;
+      font-size: 14px !important;
+      line-height: 1.1 !important;
+      font-weight: 760 !important;
+    }
