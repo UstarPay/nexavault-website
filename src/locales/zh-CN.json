@@ -92,7 +92,7 @@
     "copy": "通过邮件告诉我们你的机构类型与需求方向，我们会围绕托管、钱包、结算或稳定币场景准备对接建议。",
     "points": ["1 个工作日内回复", "产品与 API 咨询", "无需注册或登录后台"],
     "emailLabel": "联系邮箱",
-    "emailAddress": "contact@nexavault.com",
+    "emailAddress": "support@nexavault.pro",
     "responseTime": "1 个工作日",
     "emailCopy": "适用于托管、钱包、结算、稳定币、质押或 API 集成相关咨询。",
     "emailCta": "发送邮件",

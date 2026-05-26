@@ -92,7 +92,7 @@
     "copy": "Email us your institution type and target scenario. We will prepare guidance around custody, wallets, settlement, or stablecoin workflows.",
     "points": ["Reply within one business day", "Product and API consultation", "No dashboard login required"],
     "emailLabel": "Contact email",
-    "emailAddress": "contact@nexavault.com",
+    "emailAddress": "support@nexavault.pro",
     "responseTime": "1 business day",
     "emailCopy": "Use this address for custody, wallet, settlement, stablecoin, staking, or API integration discussions.",
     "emailCta": "Send email",
