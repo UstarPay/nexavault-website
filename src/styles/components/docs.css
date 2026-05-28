@@ -1,0 +1,264 @@
+.docs-page {
+  min-height: 100vh;
+  background: #f7f9f8;
+  color: #202728;
+}
+
+.docs-page section {
+  background: transparent !important;
+}
+
+.docs-page code,
+.docs-page pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.docs-product-nav {
+  position: fixed;
+  top: 79px;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  border-bottom: 1px solid #d8e0df;
+  background: rgba(247, 249, 248, .94);
+  backdrop-filter: blur(14px);
+}
+
+.docs-product-nav-inner {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.docs-product-nav a,
+.docs-search {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border-radius: 6px;
+  color: #3d4849;
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.docs-product-nav a.is-active,
+.docs-product-nav a:hover {
+  background: #e4e9e8;
+  color: #101717;
+}
+
+.docs-version-select {
+  margin-right: 10px;
+}
+
+.docs-reference-shell {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 620px) minmax(300px, 380px);
+  gap: 34px;
+  align-items: start;
+  padding-top: 92px;
+  padding-bottom: 80px;
+}
+
+.docs-left-rail,
+.docs-right-rail {
+  position: sticky;
+  top: 142px;
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+}
+
+.docs-jump-box {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  padding: 0 12px;
+  border: 1px solid #d8e0df;
+  border-radius: 7px;
+  background: #fff;
+  color: #667273;
+  font-size: 12px;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.docs-sidebar {
+  display: grid;
+  gap: 2px;
+  padding-bottom: 30px;
+}
+
+.docs-sidebar p {
+  margin: 22px 0 8px;
+  color: #778283;
+  font-size: 11px;
+  font-weight: 860;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.docs-sidebar a,
+.docs-sidebar summary {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 9px;
+  border-radius: 6px;
+  color: #475354;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.docs-sidebar a:hover,
+.docs-sidebar summary:hover,
+.docs-sidebar a.is-current {
+  background: #edf2f1;
+  color: #111818;
+}
+
+.docs-sidebar .docs-method {
+  width: 38px;
+  min-height: 18px;
+  font-size: 9px;
+}
+
+.docs-article {
+  min-width: 0;
+}
+
+.docs-article-head,
+.docs-content-section {
+  scroll-margin-top: 150px;
+}
+
+.docs-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.docs-kicker {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: #637071;
+  font-size: 12px;
+  font-weight: 840;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.docs-article h1 {
+  margin: 0 0 12px;
+  color: #202728 !important;
+  font-size: 34px;
+  line-height: 1.15;
+  text-transform: none !important;
+}
+
+.docs-article h2 {
+  margin: 0 0 12px;
+  color: #202728;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.docs-article h3 {
+  margin: 26px 0 10px;
+  color: #2b3435;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.docs-article p {
+  margin: 0 0 18px;
+  color: #485657;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.docs-article p code,
+.docs-compact-table code,
+.docs-param-table code,
+.docs-endpoint-line code {
+  color: #315a00;
+  font-size: .93em;
+}
+
+.docs-endpoint-line {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 22px;
+  color: #667273;
+}
+
+.docs-endpoint-line code {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.docs-content-section {
+  padding: 34px 0;
+  border-top: 1px solid #e0e6e5;
+}
+
+.docs-compact-table,
+.docs-param-table,
+.docs-error-list {
+  border: 1px solid #dfe6e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.docs-compact-table div,
+.docs-param-table div,
+.docs-error-list div {
+  display: grid;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #edf1f0;
+}
+
+.docs-compact-table div {
+  grid-template-columns: 160px minmax(0, 1fr);
+}
+
+.docs-param-table div {
+  grid-template-columns: minmax(150px, .36fr) 104px minmax(0, 1fr);
+}
+
+.docs-error-list div {
+  grid-template-columns: 62px 112px minmax(0, 1fr);
+}
+
+.docs-compact-table div:last-child,
+.docs-param-table div:last-child,
+.docs-error-list div:last-child {
+  border-bottom: 0;
+}
+
+.docs-compact-table span,
+.docs-param-table span,
+.docs-error-list span {
+  color: #778384;
+  font-size: 13px;
+}
+
+.docs-param-table p,
+.docs-error-list p {
+  margin: 0;
+  color: #4e5b5c;
+  font-size: 13px;
+  line-height: 1.5;
+}

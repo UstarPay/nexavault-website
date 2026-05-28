@@ -2,6 +2,8 @@
   "meta": {
     "title": "NexaVault | 機構級數位資產基礎設施",
     "description": "面向銀行、基金、交易平台與 Web3 企業的數位資產基礎設施：託管、錢包、結算、質押、穩定幣發行與 API 編排，在一個可稽核的控制平面中完成。",
+    "docsTitle": "NexaVault | 開發者文檔",
+    "docsDescription": "NexaVault API 文檔，覆蓋商戶錢包配置、使用者錢包、充值、提領、餘額支付、退款、Webhook 與對帳。",
     "navLabel": "主導覽"
   },
   "nav": {
@@ -105,6 +107,8 @@
     "metaThree": "結算"
   },
   "footer": {
+    "linksLabel": "頁腳連結",
+    "apiDocs": "API 文檔",
     "note": "機構級數位資產基礎設施原型 · 2026"
   }
 }

@@ -2,6 +2,8 @@
   "meta": {
     "title": "NexaVault | Institutional Digital Asset Infrastructure",
     "description": "Digital asset infrastructure for banks, funds, exchanges, and Web3 companies: custody, wallets, settlement, staking, stablecoin issuance, and API orchestration in one auditable control plane.",
+    "docsTitle": "NexaVault | Developer Documentation",
+    "docsDescription": "NexaVault API reference for merchant wallet configuration, user wallets, deposits, withdrawals, balance payments, refunds, webhooks, and reconciliation.",
     "navLabel": "Primary navigation"
   },
   "nav": {
@@ -105,6 +107,8 @@
     "metaThree": "Settlement"
   },
   "footer": {
+    "linksLabel": "Footer links",
+    "apiDocs": "API Docs",
     "note": "Prototype for institutional digital asset infrastructure · 2026"
   }
 }

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 function upsertMeta(selector: string, attributes: Record<string, string>) {
   let element = document.head.querySelector<HTMLMetaElement>(selector);
@@ -21,11 +22,13 @@ function upsertLink(selector: string, attributes: Record<string, string>) {
 
 const SeoManager = () => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   useEffect(() => {
-    const title = t('meta.title');
-    const description = t('meta.description');
-    const currentUrl = new URL(window.location.pathname, window.location.origin).toString();
+    const isDocsPage = location.pathname === '/docs';
+    const title = isDocsPage ? t('meta.docsTitle') : t('meta.title');
+    const description = isDocsPage ? t('meta.docsDescription') : t('meta.description');
+    const currentUrl = new URL(location.pathname, window.location.origin).toString();
     document.title = title;
     document.documentElement.lang = i18n.resolvedLanguage || i18n.language;
 
@@ -56,7 +59,7 @@ const SeoManager = () => {
       document.head.appendChild(script);
     }
     script.textContent = JSON.stringify(data);
-  }, [i18n.language, i18n.resolvedLanguage, t]);
+  }, [i18n.language, i18n.resolvedLanguage, location.pathname, t]);
 
   return null;
 };

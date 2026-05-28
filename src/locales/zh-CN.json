@@ -2,6 +2,8 @@
   "meta": {
     "title": "NexaVault | 机构级数字资产基础设施",
     "description": "面向银行、基金、交易平台与 Web3 企业的数字资产基础设施：托管、钱包、结算、质押、稳定币发行与 API 编排，在一个可审计的控制平面中完成。",
+    "docsTitle": "NexaVault | 开发者文档",
+    "docsDescription": "NexaVault API 文档，覆盖商户钱包配置、用户钱包、充值、提现、余额支付、退款、Webhook 与对账。",
     "navLabel": "主导航"
   },
   "nav": {
@@ -105,6 +107,8 @@
     "metaThree": "结算"
   },
   "footer": {
+    "linksLabel": "页脚链接",
+    "apiDocs": "API 文档",
     "note": "机构级数字资产基础设施原型 · 2026"
   }
 }

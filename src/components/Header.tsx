@@ -3,10 +3,10 @@ import BrandLogo from './BrandLogo';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const navItems = [
-  { key: 'products', href: '#products' },
-  { key: 'security', href: '#security' },
-  { key: 'developers', href: '#developers' },
-  { key: 'useCases', href: '#use-cases' },
+  { key: 'products', href: '/#products' },
+  { key: 'security', href: '/#security' },
+  { key: 'developers', href: '/#developers' },
+  { key: 'useCases', href: '/#use-cases' },
 ];
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="topbar">
       <nav className="nav shell" aria-label={t('meta.navLabel')}>
-        <a href="#" className="brand-link">
+        <a href="/" className="brand-link">
           <BrandLogo />
         </a>
 
@@ -29,10 +29,10 @@ const Header = () => {
 
         <div className="nav-actions">
           <LanguageSwitcher />
-          <a className="secondary nav-secondary" href="#products">
+          <a className="secondary nav-secondary" href="/#products">
             {t('nav.viewProducts')}
           </a>
-          <a className="primary nav-primary" href="#contact">
+          <a className="primary nav-primary" href="/#contact">
             <span>{t('nav.demo')}</span>
             <span aria-hidden="true">→</span>
           </a>
